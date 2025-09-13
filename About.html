@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maroon60 | Luxury Real Estate & Modern Living</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Maroon60 offers premium luxury real estate, modern architecture, and vibrant community living. Explore our properties today.">
+    <meta name="keywords"
+        content="Maroon60, Luxury Homes, Real Estate, Modern Living, Premium Properties, Community Homes">
+    <meta name="author" content="Maroon60 Realty">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Maroon60 | Luxury Real Estate & Modern Living">
+    <meta property="og:description"
+        content="Discover premium luxury homes and modern living spaces with Maroon60. Find your dream property today.">
+    <meta property="og:image" content="./assets/img/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maroon60.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maroon60 | Luxury Real Estate & Modern Living">
+    <meta name="twitter:description"
+        content="Discover premium luxury homes and modern living spaces with Maroon60. Find your dream property today.">
+    <meta name="twitter:image" content="./assets/img/og-image.jpg">
+    <meta name="twitter:site" content="@Maroon60">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        .bot-n-all-hero {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            background: url('./assets/img/abou-img.jpg') center/cover no-repeat;
+        }
+
+        .bot-n-all-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .bot-n-all-title {
+            font-size: 2.2rem;
+            z-index: 2;
+            position: relative;
+            color: #fff;
+        }
+
+        .bot-n-all-title:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 567px) {
+            .bot-n-all-hero {
+                height: 45vh;
+            }
+
+            .bot-n-all-title {
+                font-size: 1.5rem;
+            }
+        }
+
+        /* Section meet Styling */
+        .bot-n-meet-title {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .bot-n-meet-subtitle {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Card Styling */
+        .bot-n-meet-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .bot-n-meet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        .bot-n-meet-img {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .bot-n-meet-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .bot-n-meet-content {
+            padding: 15px 10px;
+        }
+
+        .bot-n-meet-name {
+            font-weight: 600;
+            color: var(--dark-bg);
+            margin-bottom: 4px;
+        }
+
+        .bot-n-meet-role {
+            color: var(--secondary);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scrollProgress"></div>
+    <!-- ============================ Header section ======================= -->
+    <header>
+        <!-- Top Bar -->
+        <div class="msc-agrotech-top-header">
+            <div class="container msc-top-header-wrapper">
+                <div class="msc-agrotech-header-top-bar">
+                    <div class="msc-agrotech-header-top-left">
+                        <div><i class="fas fa-map-marker-alt"></i> <span>5630 Stephanie St, Las Vegas
+                            </span></div>
+
+                        <div><i class="fas fa-phone-alt"></i> <span>+17026180420</span></div>
+                    </div>
+                    <div class="msc-agrotech-header-top-right">
+                        <div><i class="far fa-clock"></i> <span>Mon to Sat 09:00 - 21:00
+                            </span>
+                        </div>
+                        <a href="https://www.facebook.com/famco" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/famco" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/famco" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/famco" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="msc-agrotech-header-main-nav">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap p-0">
+                <!-- Hamburger -->
+                <div class="msc-mobile-toggle">
+                    <i class="fas fa-bars" id="msc-toggle-btn"></i>
+                </div>
+
+                <!-- Logo -->
+                <div class="msc-agrotech-header-logo-wrapper">
+                    <img src="./assets/img/logo.png" alt="Logo">
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="msc-agrotech-header-navbar" id="msc-mobile-menu">
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./About.html">About Us</a></li>
+                        <li><a href="./property.html">Property</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="./contactUs.html">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Button -->
+                <div class="msc-agrotech-header-right-icons" data-bs-toggle="modal" data-bs-target="#offerModal">
+                    <a href="#"><button class="msc-agrotech-header-talk-btn">Book a Visit</button></a>
+                </div>
+            </div>
+
+            <!-- ✅ Mobile Only Contact Bar -->
+            <div class="msc-mobile-contact-bar" id="msc-mobile-contact">
+                <a href="https://maps.app.goo.gl/yourLocation" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Hadapsar, Pune</span>
+                </a>
+                <a href="tel:+919175966453">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 91759 66453</span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <!--=========================== Header section end ========================== -->
+    <!-- Hero Section -->
+    <section class="bot-n-all-hero d-flex align-items-center justify-content-center text-center">
+        <div class="bot-n-all-overlay"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="./index.html" class="text-decoration-none">
+                            <h1 class="bot-n-all-title text-white fw-bold">Home / </h1>
+                            <a href="./About.html" class="text-decoration-none">
+                                <h1 class="bot-n-all-title text-white fw-bold">About</h1>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero about end -->
+    <!-- our about us -->
+    <section class="bot-n-bg-custom py-5 px-3 px-md-5" id="about">
+        <div class="container">
+            <div class="row align-items-center g-4">
+
+                <!-- Left Large Image -->
+                <div class="col-md-5">
+                    <div class="bot-n-img-large">
+                        <button class="bot-n-btn-custom position-absolute bottom-0 start-0 m-3">
+                            Discover More →
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-md-7 bot-n-about-rihg">
+                    <p class="text-uppercase top fw-semibold mb-2">
+                        Maroon60 Real Estate
+                    </p>
+                    <h2 class="fw-bold fs-4 fs-md-3 mb-3">
+                        Building Communities. Inspiring Spaces.
+                    </h2>
+                    <p class="text-secondary mb-4">
+                        At Maroon60, we bring you exquisite residential and commercial properties crafted with
+                        architectural finesse and luxury. Let us guide you home, where elegance meets comfort.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="d-flex flex-wrap gap-4 mb-4 bot-n-stats">
+                        <div>
+                            <h3>120+</h3>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div>
+                            <h3>20+</h3>
+                            <p>Years in Industry</p>
+                        </div>
+                        <div>
+                            <h3>5000+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+
+                    <!-- Small Thumbnails -->
+                    <div class="d-flex gap-2">
+                        <div class="bot-n-thumb"><img src="./assets/img/img3.jpg" alt="Maroon60 Project 1"></div>
+                        <div class="bot-n-thumb"><img src="./assets/img/img2.jpg" alt="Maroon60 Project 2"></div>
+                        <div class="bot-n-thumb"><img src="./assets/img/img1.jpg" alt="Maroon60 Project 3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about us -->
+    <!-- other style -->
+    <section class="bot-n-sanctuary">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+
+                <!-- Left side with images -->
+                <div class="col-md-5">
+                    <div class="bot-n-img-wrapper">
+                        <!-- Top small image -->
+                        <div class="bot-n-top-small-img">
+                            <img src="./assets/img/hero2.jpg" alt="Project Small View"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        </div>
+
+                        <!-- Bottom main image -->
+                        <div class="bot-n-main-img">
+                            <img src="./assets/img/img3.jpg" alt="Main Project View"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: 12px;">
+                        </div>
+
+                        <!-- Overlay badge -->
+                        <div class="overlay-badge">
+                            <!-- 5 dots -->
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <span class="badge-text">Top Rated Projects</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right content -->
+                <div class="col-md-7">
+                    <p class="text-uppercase" style="color: var(--highlight); font-weight: 600;">Maroon60 Signature</p>
+                    <h2 class="bot-n-content-title">
+                        Elevating Real Estate Standards with Elegance & Trust
+                    </h2>
+                    <p class="bot-n-content-subtitle">
+                        At Maroon60, we blend architectural excellence with serene living. Discover residential projects
+                        that redefine luxury and bring comfort, style, and investment value together.
+                    </p>
+
+                    <!-- Checklist -->
+                    <div class="row bot-n-checklist gy-2">
+                        <div class="col-sm-6">
+                            <div class="item">
+                                <span class="check-icon">✔️</span>
+                                <span>Prime Location Connectivity</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="item">
+                                <span class="check-icon">✔️</span>
+                                <span>Modern Amenities & Green Spaces</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="item">
+                                <span class="check-icon">✔️</span>
+                                <span>Luxury Finishes & Interiors</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="item">
+                                <span class="check-icon">✔️</span>
+                                <span>Transparent Pricing & Support</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="mt-4 d-flex gap-3">
+                        <button class="bot-n-btn-primary">Explore Projects</button>
+                        <button class="bot-n-btn-secondary">Contact Us</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- other style end  -->
+
+    <!-- signatue -->
+    <section class="signature-features container" id="services">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="section-subtitle">Signature Features</p>
+                <h2>Crafting Exceptional Spaces with Distinctive Luxury</h2>
+            </div>
+        </div>
+
+        <div class="row mt-5 g-4">
+            <!-- Card 1 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-card">
+                    <span class="feature-number">01</span>
+                    <span class="feature-icon"><i class="fas fa-home"></i></span>
+                    <h3>Luxury Rentals Available</h3>
+                    <p>Explore our curated collection of premium rental properties in the city's most sought-after
+                        locales.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-card">
+                    <span class="feature-number">02</span>
+                    <span class="feature-icon"><i class="fas fa-ruler-combined"></i></span>
+                    <h3>Thoughtfully Designed Layouts</h3>
+                    <p>Every space is crafted with precision, ensuring optimal flow, light & functionality.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-card">
+                    <span class="feature-number">03</span>
+                    <span class="feature-icon"><i class="fas fa-wardrobe"></i></span>
+                    <h3>Elegant Fixtures & Wardrobes</h3>
+                    <p>Top-quality fittings and built-in wardrobes that blend style with utility.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-card">
+                    <span class="feature-number">04</span>
+                    <span class="feature-icon"><i class="fas fa-child"></i></span>
+                    <h3>Vibrant Kids' Play Area</h3>
+                    <p>Safe & fun spaces for children to explore, play, and grow.</p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-card">
+                    <span class="feature-number">05</span>
+                    <span class="feature-icon"><i class="fas fa-palette"></i></span>
+                    <h3>Artistic Gallery Zone</h3>
+                    <p>A dedicated space to showcase art & creativity in an inspiring environment.</p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-sm-6 col-lg-4">
+                <div class="feature-card">
+                    <span class="feature-number">06</span>
+                    <span class="feature-icon"><i class="fas fa-project-diagram"></i></span>
+                    <h3>Sturdy & Planned Construction</h3>
+                    <p>Engineered for durability with quality materials and transparent construction practices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- signatue  -->
+
+    <!-- ====gallery start -->
+    <div class="container">
+        <section class="bot-n-gall-section">
+            <!-- Left Content -->
+            <div>
+                <div class="bot-n-gall-icon-badge">
+                    <i class="fas fa-camera-retro"></i>
+                </div>
+                <p class="bot-n-gall-subtitle">Inspired Living</p>
+                <h2 class="bot-n-gall-title">
+                    Discover Our Captivating Visual Journey
+                </h2>
+                <p class="bot-n-gall-text mt-3">
+                    Experience Maroon60 through our curated gallery — showcasing elegant architecture, vibrant community
+                    spaces, and the timeless charm that defines our properties.
+                </p>
+                <button class="bot-n-gall-btn">View All Photos</button>
+            </div>
+
+            <!-- Right Grid Gallery -->
+            <div class="bot-n-gall-grid">
+                <div class="bot-n-gall-img-box bot-n-gall-img1">
+                    <img src="./assets/img/galler1.png" alt="">
+                </div>
+                <div class="bot-n-gall-img-box bot-n-gall-img2">
+                    <img src="./assets/img/galler2.png" alt="">
+                </div>
+                <div class="bot-n-gall-img-box bot-n-gall-img3">
+                    <img src="./assets/img/galler3.png" alt="">
+                </div>
+                <div class="bot-n-gall-img-box bot-n-gall-img4">
+                    <img src="./assets/img/galler4.png" alt="">
+                </div>
+                <div class="bot-n-gall-img-box bot-n-gall-img5">
+                    <img src="./assets/img/img3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- galllery end -->
+    <!-- we offer -->
+    <section class="bot-n-new-stats-section container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <p class="bot-n-new-subtitle">What We Offer</p>
+                <h2 class="bot-n-new-title">Our Commitment in Numbers</h2>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-sm-6 col-lg-3 bot-n-new-stat-card">
+                <p class="bot-n-new-stat-label">Luxury Spaces</p>
+                <h3 class="bot-n-new-stat-number">2,450+ Sqft</h3>
+                <p class="bot-n-new-stat-desc">Expansive interiors crafted with elegance and comfort in every corner.
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-3 bot-n-new-stat-card">
+                <p class="bot-n-new-stat-label">Satisfied Clients</p>
+                <h3 class="bot-n-new-stat-number">5,000+</h3>
+                <p class="bot-n-new-stat-desc">Proudly delivering homes with trust, transparency, and timeless value.
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-3 bot-n-new-stat-card">
+                <p class="bot-n-new-stat-label">Projects Delivered</p>
+                <h3 class="bot-n-new-stat-number">120+</h3>
+                <p class="bot-n-new-stat-desc">Exceptional residential and commercial projects completed with precision.
+                </p>
+            </div>
+            <div class="col-sm-6 col-lg-3 bot-n-new-stat-card">
+                <p class="bot-n-new-stat-label">Rated Excellence</p>
+                <h3 class="bot-n-new-stat-number">9.8 / 10</h3>
+                <p class="bot-n-new-stat-desc">Based on feedback from our trusted clients and community partners.</p>
+            </div>
+        </div>
+    </section>
+    <!-- we offer end -->
+    <!-- ============team -->
+    <!-- Meet Our Expert Team -->
+    <section class="bot-n-meet-team py-5">
+        <div class="container">
+            <!-- Section Title -->
+            <div class="text-center mb-5">
+                <h2 class="bot-n-meet-title">Meet Our Expert Team</h2>
+                <p class="bot-n-meet-subtitle">
+                    Passionate professionals dedicated to turning your real estate dreams into reality.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Team Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bot-n-meet-card text-center">
+                        <div class="bot-n-meet-img">
+                            <img src="./assets/img/Team1.jpg" alt="Team Member" />
+                        </div>
+                        <div class="bot-n-meet-content">
+                            <h5 class="bot-n-meet-name">Amit Sharma</h5>
+                            <p class="bot-n-meet-role">Senior Architect</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bot-n-meet-card text-center">
+                        <div class="bot-n-meet-img">
+                            <img src="./assets/img/team2.jpg" alt="Team Member" />
+                        </div>
+                        <div class="bot-n-meet-content">
+                            <h5 class="bot-n-meet-name">Dheeraj Mehta</h5>
+                            <p class="bot-n-meet-role">Interior Designer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bot-n-meet-card text-center">
+                        <div class="bot-n-meet-img">
+                            <img src="./assets/img/team3.jpg" alt="Team Member" />
+                        </div>
+                        <div class="bot-n-meet-content">
+                            <h5 class="bot-n-meet-name">Rohan Verma</h5>
+                            <p class="bot-n-meet-role">Sales Head</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Card -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="bot-n-meet-card text-center">
+                        <div class="bot-n-meet-img">
+                            <img src="./assets/img/team4.jpg" alt="Team Member" />
+                        </div>
+                        <div class="bot-n-meet-content">
+                            <h5 class="bot-n-meet-name">Neha Singh</h5>
+                            <p class="bot-n-meet-role">Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===========team  -->
+    <!--  tesmonila -->
+    <div class="container">
+        <section class="bot-n-new-testimonial-section">
+            <div class="bot-n-new-testimonial-wrapper">
+                <p class="bot-n-new-subtitle">What Our Homeowners Say</p>
+                <h2 class="bot-n-new-title">Stories of Delight & Trust</h2>
+
+                <div class="bot-n-new-slider" id="bot-n-new-slider">
+                    <div class="bot-n-new-slider-inner" id="bot-n-new-slides">
+
+                        <!-- Slide 1 -->
+                        <div class="bot-n-new-slide">
+                            <div class="bot-n-new-slide-stars">★★★★★</div>
+                            <p class="bot-n-new-slide-text">
+                                “Truly a wonderful experience. The design, comfort, and service have exceeded all
+                                expectations.”
+                            </p>
+                            <div class="bot-n-new-user-info">
+                                <div class="bot-n-new-user-avatar">
+                                    <img src="https://i.pravatar.cc/50?img=11" alt="avatar">
+                                </div>
+                                <div>
+                                    <p class="bot-n-new-user-name">Ayesha Khan</p>
+                                    <p class="bot-n-new-user-location">Delhi, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="bot-n-new-slide">
+                            <div class="bot-n-new-slide-stars">★★★★☆</div>
+                            <p class="bot-n-new-slide-text">
+                                “Living in Maroon60 has transformed our lifestyle — every detail speaks luxury & peace.”
+                            </p>
+                            <div class="bot-n-new-user-info">
+                                <div class="bot-n-new-user-avatar">
+                                    <img src="https://i.pravatar.cc/50?img=32" alt="avatar">
+                                </div>
+                                <div>
+                                    <p class="bot-n-new-user-name">Rahul Mehta</p>
+                                    <p class="bot-n-new-user-location">Chandigarh, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="bot-n-new-slide">
+                            <div class="bot-n-new-slide-stars">★★★★★</div>
+                            <p class="bot-n-new-slide-text">
+                                “A perfect blend of elegance, security, and modern amenities — I am proud to call it
+                                home.”
+                            </p>
+                            <div class="bot-n-new-user-info">
+                                <div class="bot-n-new-user-avatar">
+                                    <img src="https://i.pravatar.cc/50?img=47" alt="avatar">
+                                </div>
+                                <div>
+                                    <p class="bot-n-new-user-name">Sneha Sharma</p>
+                                    <p class="bot-n-new-user-location">Mumbai, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="bot-n-new-nav">
+                    <button type="button" id="bot-n-new-prev">&#8249;</button>
+                    <div class="bot-n-new-nav-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button type="button" id="bot-n-new-next">&#8250;</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- end tesmonial -->
+    <!-- model form -->
+    <!-- Modal Form -->
+    <div class="modal fade" id="offerModal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="bot-n-all-pop-form">
+                    <!-- Close Button -->
+                    <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-times"></i>
+                    </button>
+
+                    <!-- Logo -->
+                    <div class="logo logo-model">
+                        <img src="./assets/img/logo.png" alt="Salford Logo" width="150px" height="60px">
+
+                    </div>
+                    <div class="bot-model-body">
+                        <!-- Title -->
+                        <h4>Get Priority Access & Exclusive Pricing</h4>
+                        <p>Create your account to explore exclusive property deals, track performance, and unlock smart
+                            investment tools.</p>
+
+                        <!-- Form -->
+                        <form id="offerForm">
+                            <div class="form-group">
+                                <i class="fa fa-user"></i>
+                                <input type="text" class="form-control" placeholder="Enter Full Name" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-envelope"></i>
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <i class="fa fa-flag"></i>
+                                <input type="tel" class="form-control" placeholder="Enter Phone Number" required>
+                            </div>
+                            <button type="submit" class="btn-submit">Start Tour</button>
+                        </form>
+
+                        <!-- We Promise Section -->
+                        <div class="promise">
+                            <h6>We Promise</h6>
+                            <div class="promise-icons">
+                                <div class="item">
+                                    <img src="./assets/img/instant.png" alt="Call Back">
+                                    <p>Instant Call Back</p>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/price.png" alt="Price">
+                                    <p>Unmatched Price</p>
+                                </div>
+                                <div class="item">
+                                    <img src="./assets/img/vit.png" alt="Site Visit">
+                                    <p>Free Site Visit</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- model form -->
+    <!-- ========other vdieo -->
+
+    <!-- footer  -->
+    <div class="bot-N-footer-realstate">
+        <footer class=" container">
+            <div class="row g-3">
+                <!-- Left Column -->
+                <div class="col-md-3 mb-3">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="Salford Logo">
+
+                    </div>
+                    <p>We have built our reputation as true local area experts.</p>
+                    <div class="newsletter d-flex">
+                        <input type="email" placeholder="Input your email">
+                        <button>Send</button>
+                    </div>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="col-md-4 qr-box text-center mb-3">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://saleford.gov.in"
+                        alt="QR Code">
+                    <small><strong>RERA Registration No: P52100032842</strong></small>
+                    <small>Details of the project are available on the official website of RERA:</small>
+                    <small><a href="https://saleford.gov.in" target="_blank">https://saleford.gov.in</a></small>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-2">
+                    <div class="service mb-3">
+                        <h5>Service</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#services">Service</a></li>
+                            <li><a href="#properties">Property</a></li>
+                            <li><a href="#">Term & Comditions</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3 contact-section">
+
+                    <!-- Call -->
+                    <a href="tel:+919878989878" class="contact-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="text">
+                            <h6>Call Us</h6>
+                            <span>+91 9878989878</span>
+                        </div>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:info@example.com" class="contact-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="text">
+                            <h6>Email Us</h6>
+                            <span>info@example.com</span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+
+
+    <script src="./assets/scrip/script.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('msc-toggle-btn');
+        const mobileMenu = document.getElementById('msc-mobile-menu');
+        const mobileContact = document.getElementById('msc-mobile-contact');
+
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            mobileContact.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- tesmonila -->
+    <script>
+        (function () {
+            const slidesContainer = document.getElementById('bot-n-new-slides');
+            const slides = slidesContainer.children;
+            const prevBtn = document.getElementById('bot-n-new-prev');
+            const nextBtn = document.getElementById('bot-n-new-next');
+            const dots = document.querySelectorAll('.bot-n-new-nav-dots .dot');
+            let currentIndex = 0;
+            const total = slides.length;
+
+            function updateSlider(idx) {
+                slidesContainer.style.transform = `translateX(-${idx * 100}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? total - 1 : currentIndex - 1;
+                updateSlider(currentIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex === total - 1) ? 0 : currentIndex + 1;
+                updateSlider(currentIndex);
+            });
+        })();
+    </script>
+    <!-- edn tesmonial -->
+    <!-- project bar -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+    </script>
+    <!-- projecss bar -->
+</body>
+
+</html>

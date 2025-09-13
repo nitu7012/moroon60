@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maroon60 | Luxury Real Estate & Modern Living</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Maroon60 offers premium luxury real estate, modern architecture, and vibrant community living. Explore our properties today.">
+    <meta name="keywords"
+        content="Maroon60, Luxury Homes, Real Estate, Modern Living, Premium Properties, Community Homes">
+    <meta name="author" content="Maroon60 Realty">
+
+    <!-- Open Graph for social sharing -->
+    <meta property="og:title" content="Maroon60 | Luxury Real Estate & Modern Living">
+    <meta property="og:description"
+        content="Discover premium luxury homes and modern living spaces with Maroon60. Find your dream property today.">
+    <meta property="og:image" content="./assets/img/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maroon60.com">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maroon60 | Luxury Real Estate & Modern Living">
+    <meta name="twitter:description"
+        content="Discover premium luxury homes and modern living spaces with Maroon60. Find your dream property today.">
+    <meta name="twitter:image" content="./assets/img/og-image.jpg">
+    <meta name="twitter:site" content="@Maroon60">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --dark-bg: #5e0b1f;
+            --primary: #7a0f2c;
+            --white: #fff;
+            --black: #2222;
+        }
+
+        .bot-n-all-hero {
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            background: url('./assets/img/abou-img.jpg') center/cover no-repeat;
+            margin-bottom: 4rem;
+        }
+
+        .bot-n-all-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+
+        .bot-n-all-title {
+            font-size: 2.2rem;
+            z-index: 2;
+            position: relative;
+            color: #fff;
+        }
+
+        .bot-n-all-title:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 567px) {
+            .bot-n-all-hero {
+                height: 45vh;
+            }
+
+            .bot-n-all-title {
+                font-size: 1.5rem;
+            }
+            .faq-img{
+                display: none !important;
+            }
+        }
+
+        /* other */
+
+        .msc-agrotech-contactUs-page-wrapper {
+            background-color: #f8f9fa;
+        }
+
+        .msc-agrotech-contactUs-page-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .msc-agrotech-contactUs-page-subtitle {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .msc-agrotech-contactUs-page-text {
+            color: #6c757d;
+        }
+
+        .msc-agrotech-contactUs-page-social a {
+            color: var(--dark-bg);
+            transition: color 0.3s ease;
+            background-color: #ffefec;
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-size: 20px;
+        }
+
+        .msc-agrotech-contactUs-page-social a:hover {
+            background-color: var(--dark-bg);
+            color: #fff;
+            transition: background-color 0.3s ease, color 0.3s ease;
+
+        }
+
+        .polyhouse-faq-form-container {
+            background-color: #fff;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .polyhouse-faq-form-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .polyhouse-faq-form input,
+        .polyhouse-faq-form textarea {
+            border-radius: 1rem;
+            padding: 0.75rem 1rem;
+        }
+
+        .polyhouse-faq-form button {
+            border-radius: 2rem;
+            padding: 0.5rem 2rem;
+            background-color: var(--dark-bg);
+            color: #f8f9fa;
+            border: none;
+        }
+
+        .polyhouse-faq-form textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        .polyhouse-faq-form input:focus,
+        .polyhouse-faq-form textarea:focus {
+            box-shadow: none !important;
+            border: 2px solid #5e0b1f !important;
+            outline: none;
+        }
+
+        .msc-agrotech-contactUs-page-map iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 350px;
+            border-radius: 5px;
+        }
+
+        .msc-agrotech-contactUs-page-social a {
+            text-decoration: none;
+        }
+
+        .msc-agrotech-contactUs-page-social {
+            margin-bottom: 20px;
+        }
+
+        .msc-agrotech-contactUs-page-item {
+            padding: 14px 0;
+            border-bottom: 1px solid #e3e1e1;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .msc-agrotech-contactUs-page-item i {
+            width: 40px;
+            height: 40px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #5e0b1f;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        }
+
+        .msc-agrotech-contactUs-page-form {
+            border-radius: 14px;
+            border: 1px solid #73797e;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        /* othr end */
+
+        /* faq */
+        .msc-agrotech-faq-wrapper {
+            margin-top: 2rem;
+        }
+
+
+        .polyhouse-faq-equal-height {
+            background-color: #f8f9fa;
+            border-radius: 1rem;
+            padding: 2rem;
+        }
+
+        .msc-agrotech-faq-heading {
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: left;
+            margin-top: 2rem;
+        }
+
+        .msc-agrotech-faq-subheading {
+            text-align: left;
+            color: #6c757d;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .msc-agrotech-faq .accordion-button {
+            border-radius: 2rem !important;
+            background-color: #ffffff;
+            box-shadow: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .msc-agrotech-faq .accordion-item {
+            border: none;
+            padding: 6px;
+            margin-bottom: 1rem;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+
+        .msc-agrotech-faq .accordion-item.green-border {
+            border: 2px solid #5e0b1f;
+            box-shadow: 0 4px 12px rgba(0, 128, 0, 0.15);
+        }
+
+        .msc-agrotech-faq .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='none' stroke='black' stroke-width='2' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2 6l6 6 6-6'/%3E%3C/svg%3E");
+            transition: transform 0.3s ease;
+        }
+
+        .msc-agrotech-faq .accordion-button:not(.collapsed)::after {
+            transform: rotate(180deg);
+        }
+
+        .accordion-collapse {
+            transition: height 0.4s ease, opacity 0.4s ease;
+        }
+
+        .accordion-body {
+            transition: opacity 0.4s ease;
+        }
+
+        .faq-img{
+            height: 500px;
+            border-radius: 14px;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .faq-img img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 14px;
+           border: 2px solid #5e0b1f;
+        }
+
+        /* faq end */
+    </style>
+</head>
+
+<body>
+    <div id="scrollProgress"></div>
+    <!-- ============================ Header section ======================= -->
+    <header>
+        <!-- Top Bar -->
+        <div class="msc-agrotech-top-header">
+            <div class="container msc-top-header-wrapper">
+                <div class="msc-agrotech-header-top-bar">
+                    <div class="msc-agrotech-header-top-left">
+                        <div><i class="fas fa-map-marker-alt"></i> <span>5630 Stephanie St, Las Vegas
+                            </span></div>
+
+                        <div><i class="fas fa-phone-alt"></i> <span>+17026180420</span></div>
+                    </div>
+                    <div class="msc-agrotech-header-top-right">
+                        <div><i class="far fa-clock"></i> <span>Mon to Sat 09:00 - 21:00
+                            </span>
+                        </div>
+                        <a href="https://www.facebook.com/famco" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/famco" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/famco" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/famco" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Nav -->
+        <div class="msc-agrotech-header-main-nav">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap p-0">
+                <!-- Hamburger -->
+                <div class="msc-mobile-toggle">
+                    <i class="fas fa-bars" id="msc-toggle-btn"></i>
+                </div>
+
+                <!-- Logo -->
+                <div class="msc-agrotech-header-logo-wrapper">
+                    <img src="./assets/img/logo.png" alt="Logo">
+                </div>
+
+                <!-- Navigation Links -->
+                <nav class="msc-agrotech-header-navbar" id="msc-mobile-menu">
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="./About.html">About Us</a></li>
+                        <li><a href="./property.html">Property</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="./contactUs.html">Contacts</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Right Button -->
+                <div class="msc-agrotech-header-right-icons" data-bs-toggle="modal" data-bs-target="#offerModal">
+                    <a href="#"><button class="msc-agrotech-header-talk-btn">Book a Visit</button></a>
+                </div>
+            </div>
+
+            <!-- ✅ Mobile Only Contact Bar -->
+            <div class="msc-mobile-contact-bar" id="msc-mobile-contact">
+                <a href="https://maps.app.goo.gl/yourLocation" target="_blank">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Hadapsar, Pune</span>
+                </a>
+                <a href="tel:+919175966453">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+91 91759 66453</span>
+                </a>
+            </div>
+        </div>
+
+
+    </header>
+    <!--=========================== Header section end ========================== -->
+    <!-- Hero Section -->
+    <section class="bot-n-all-hero d-flex align-items-center justify-content-center text-center">
+        <div class="bot-n-all-overlay"></div>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="./index.html" class="text-decoration-none">
+                            <h1 class="bot-n-all-title text-white fw-bold">Home / </h1>
+                            <a href="./contactUs.html" class="text-decoration-none">
+                                <h1 class="bot-n-all-title text-white fw-bold">Contact</h1>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero about end -->
+    <!-- map -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <iframe class="map-frame"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.410119019527!2d73.93419947496413!3d18.553560082539284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c12e6d3cf9fb%3A0x9d6847cf1ed33a49!2sNirvana%20Apartments%2C%20Magarpatta%20Rd%2C%20Hadapsar%2C%20Pune%2C%20Maharashtra%20411028!5e0!3m2!1sen!2sin!4v1694522300000!5m2!1sen!2sin"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <!-- map info -->
+    <!-- ====contact info -->
+    <section class="msc-agrotech-contactUs-page-wrapper py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Left Column -->
+                <div class="col-lg-6">
+                    <div class="msc-contact-info-wrapper">
+                        <div class="msc-agrotech-contactUs-page-info p-4 h-100">
+                            <h3 class="msc-agrotech-contactUs-page-title">Get in touch</h3>
+                            <p class="msc-agrotech-contactUs-page-subtitle">
+                                <strong>We can ensure reliability, low cost fares and most important, with safety and
+                                    comfort in
+                                    mind.</strong>
+                            </p>
+                            <p class="msc-agrotech-contactUs-page-text">
+                                Etiam sit amet convallis erat – class aptent taciti sociosqu ad litora torquent per
+                                conubia! Maecenas
+                                gravida lacus. Lorem etiam sit amet convallis erat.
+                            </p>
+                            <div class="msc-agrotech-contactUs-page-social mt-3 d-flex justify-content-left gap-3">
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="msc-agrotech-contactUs-page-container">
+                                <div class="msc-agrotech-contactUs-page-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="msc-agrotech-contactUs-page-text">connect@peoplemetrics.com</span>
+                                </div>
+                                <div class="msc-agrotech-contactUs-page-item">
+                                    <i class="fas fa-phone"></i>
+                                    <span class="msc-agrotech-contactUs-page-text">(215) 979-8030</span>
+                                </div>
+                                <div class="msc-agrotech-contactUs-page-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="msc-agrotech-contactUs-page-text">
+                                        500 Office Center Drive, Suite 400,<br>
+                                        Fort Washington, PA 19034
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6">
+                    <div class="msc-agrotech-contactUs-page-form p-4 h-100">
+                        <h3 class="msc-agrotech-contactUs-page-title">Contact Us</h3>
+                        <form class="polyhouse-faq-form">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your Name"
+                                    required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email"
+                                    placeholder="Enter a valid email address" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit">SEND</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--===contact info  -->
+    <!-- ================== FAQ SECTION =============== -->
+    <div class="container py-5">
+        <div class="row polyhouse-faq-equal-height">
+            <div style="text-align: center;">
+                <h2 class="msc-agrotech-title-heading-all msc-faq">FAQ About Our Real Estate Projects</h2>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="col-lg-6 col-12">
+                <div class="msc-agrotech-faq-wrapper h-100">
+                    <h2 class="msc-agrotech-faq-heading">Project Support & Information</h2>
+                    <p class="msc-agrotech-faq-subheading">
+                        Get answers to the most common questions about our real estate projects, booking process,
+                        payment plans, and amenities.
+                    </p>
+
+                    <div class="accordion msc-agrotech-faq" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne">
+                                    What types of properties are available?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer premium 2BHK, 3BHK, and 4BHK apartments along with penthouses and luxury
+                                    villas in prime locations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo">
+                                    What is the booking process?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Booking is simple — choose your unit, pay the initial booking amount, and complete
+                                    the
+                                    required documentation with our sales team’s guidance.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree">
+                                    What are the available payment plans?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer flexible payment plans including construction-linked, down payment, and
+                                    home
+                                    loan options with leading banks.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour">
+                                    When will the project be completed?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our ongoing projects are scheduled for completion by December 2025, subject to RERA
+                                    approvals and clearances.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive">
+                                    What amenities are included in the project?
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Our projects include a clubhouse, swimming pool, gym, landscaped gardens, children’s
+                                    play area, 24/7 security, and ample parking.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-6 col-12">
+                <div class="container">
+                    <div class="faq-img">
+                        <img src="./assets/img/faQa.jpg" alt="">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================ FAQ SECTION END ================= -->
+    <!-- ========other vdieo -->
+    <!-- Video Section inside container -->
+    <div class="container py-4">
+        <div class="bot-n-new-image-wrapper">
+            <!-- Background Image -->
+            <div class="bot-n-new-image-bg"></div>
+            <div class="bot-n-new-overlay"></div>
+
+            <div class="bot-n-new-form-section">
+                <div class="bot-n-new-video-heading">
+                    <h4>Ready to invest in your future home?</h4>
+                    <p>We have homes in 20+ cities across the country to choose from!</p>
+                    <button class="bot-n-new-btn-submit" data-bs-toggle="modal" data-bs-target="#offerModal">
+                        Browse homes <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============== other vedio -->
+    <!-- footer  -->
+    <div class="bot-N-footer-realstate">
+        <footer class=" container">
+            <div class="row g-3">
+                <!-- Left Column -->
+                <div class="col-md-3 mb-3">
+                    <div class="logo">
+                        <img src="./assets/img/logo.png" alt="Salford Logo">
+
+                    </div>
+                    <p>We have built our reputation as true local area experts.</p>
+                    <div class="newsletter d-flex">
+                        <input type="email" placeholder="Input your email">
+                        <button>Send</button>
+                    </div>
+                </div>
+
+                <!-- Middle Column -->
+                <div class="col-md-4 qr-box text-center mb-3">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://saleford.gov.in"
+                        alt="QR Code">
+                    <small><strong>RERA Registration No: P52100032842</strong></small>
+                    <small>Details of the project are available on the official website of RERA:</small>
+                    <small><a href="https://saleford.gov.in" target="_blank">https://saleford.gov.in</a></small>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-md-2">
+                    <div class="service mb-3">
+                        <h5>Service</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#services">Service</a></li>
+                            <li><a href="#properties">Property</a></li>
+                            <li><a href="#">Term & Comditions</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="col-md-3 contact-section">
+
+                    <!-- Call -->
+                    <a href="tel:+919878989878" class="contact-box">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="text">
+                            <h6>Call Us</h6>
+                            <span>+91 9878989878</span>
+                        </div>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:info@example.com" class="contact-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="text">
+                            <h6>Email Us</h6>
+                            <span>info@example.com</span>
+                        </div>
+                    </a>
+
+                </div>
+
+
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+
+
+    <script src="./assets/scrip/script.js"></script>
+    <script>
+        const toggleBtn = document.getElementById('msc-toggle-btn');
+        const mobileMenu = document.getElementById('msc-mobile-menu');
+        const mobileContact = document.getElementById('msc-mobile-contact');
+
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            mobileContact.classList.toggle('active');
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- tesmonila -->
+    <script>
+        (function () {
+            const slidesContainer = document.getElementById('bot-n-new-slides');
+            const slides = slidesContainer.children;
+            const prevBtn = document.getElementById('bot-n-new-prev');
+            const nextBtn = document.getElementById('bot-n-new-next');
+            const dots = document.querySelectorAll('.bot-n-new-nav-dots .dot');
+            let currentIndex = 0;
+            const total = slides.length;
+
+            function updateSlider(idx) {
+                slidesContainer.style.transform = `translateX(-${idx * 100}%)`;
+                dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+            }
+
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex === 0) ? total - 1 : currentIndex - 1;
+                updateSlider(currentIndex);
+            });
+
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex === total - 1) ? 0 : currentIndex + 1;
+                updateSlider(currentIndex);
+            });
+        })();
+    </script>
+    <!-- edn tesmonial -->
+    <!-- project bar -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPercent = (scrollTop / docHeight) * 100;
+            document.getElementById('scrollProgress').style.width = scrollPercent + '%';
+        });
+    </script>
+    <!-- projecss bar -->
+</body>
+
+</html>
