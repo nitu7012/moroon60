@@ -66,6 +66,7 @@ html {
 .msc-mobile-contact-bar {
     display: none;
 }
+
 @media (max-width: 768px) {
     .msc-mobile-contact-bar.active {
         display: flex;
@@ -75,6 +76,8 @@ html {
         color: #fff;
         padding: 0.7rem 0;
         gap: 1rem;
+        position: relative;
+        margin-top: 0.7rem;
     }
 
     .msc-mobile-contact-bar a {
@@ -404,12 +407,17 @@ header {
     .msc-agrotech-header-navbar.open {
         opacity: 1;
         max-height: 500px;
+        background-color: #2c030dbb;
     }
 
     .msc-agrotech-header-navbar ul {
         flex-direction: column;
         gap: 10px;
         padding: 10px 0;
+    }
+
+    .msc-agrotech-header-navbar ul li a{
+        color: #fff !important;
     }
 
     .msc-agrotech-header-right-icons {
@@ -419,7 +427,7 @@ header {
 
 /* =====style */
 .bot-n-bg-custom {
-    background-color:#ffffff;
+    background-color: #ffffff;
     margin-top: 2rem;
 }
 
